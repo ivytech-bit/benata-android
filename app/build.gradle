@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'africa.benata.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "africa.benata.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        // CHANGE THIS to the address of your online BENATA server, with no slash at the end.
+        buildConfigField "String", "APP_URL", "\"https://YOUR-BENATA-ADDRESS.onrender.com\""
+    }
+    buildFeatures {
+        buildConfig true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
