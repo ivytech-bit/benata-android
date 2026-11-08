@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         // CHANGE THIS to the address of your online BENATA server, with no slash at the end.
-        buildConfigField "String", "APP_URL", "\"https://YOUR-BENATA-ADDRESS.onrender.com\""
+        buildConfigField "String", "APP_URL", "\"https://benata.onrender.com\""
     }
     buildFeatures {
         buildConfig true
